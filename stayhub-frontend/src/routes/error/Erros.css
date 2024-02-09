@@ -1,0 +1,32 @@
+/* FILEPATH: /Users/macbookair/Documents/GitHub/stayhub/stayhub-frontend/src/routes/error/Errors.css */
+
+body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.error-message {
+    font-size: 24px;
+    color: #ff0000;
+    text-align: center;
+}
+
+.error-code {
+    font-size: 48px;
+    color: #ff0000;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.error-description {
+    font-size: 18px;
+    color: #333333;
+    text-align: center;
+    margin-top: 20px;
+}

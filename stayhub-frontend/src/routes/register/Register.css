@@ -1,0 +1,80 @@
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url('https://cdn.pixabay.com/photo/2014/05/17/18/03/lobby-346426_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    place-items: center;
+}
+
+.register-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.register-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.register-content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.register-content input[type="text"],
+.register-content input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.register-content .button-container {
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 20px);
+    margin-top: 10px;
+}
+
+.register-content button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.register-content button:hover {
+    background-color: #0056b3;
+}
+
+input {
+    /* Add styles for inputs if needed */
+}

@@ -1,0 +1,127 @@
+
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url('https://coolwallpapers.me/picsup/2639336-st-barth-4k-cool-picture.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    place-items: center;
+}
+
+.login-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.login-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.login-content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.login-content input[type="text"],
+.login-content input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.login-content .button-container {
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 20px);
+    margin-top: 10px;
+}
+
+.login-content button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.login-content button:hover {
+    background-color: #0056b3;
+}
+
+input {
+    /* Aggiungi stili per gli input, se necessario */
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left; /* Modifica qui */
+}
+
+.navbar li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover {
+    background-color: #555;
+}
+
+.navbar .button-register {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.navbar .button-register:hover {
+    background-color: #0056b3;
+}
