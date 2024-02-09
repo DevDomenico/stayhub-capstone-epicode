@@ -14,7 +14,7 @@ const Navbars = () => {
                     <Navbar.Brand onClick={() => navigate("/")}>StayHub</Navbar.Brand>
                     <Nav className="me-auto">
                         <Nav.Link onClick={() => navigate("/home")}>Home</Nav.Link>
-                        <Nav.Link onClick={() => navigate("/home")}>Ricerca</Nav.Link>
+                        <Nav.Link onClick={() => navigate("/home")}>cerca</Nav.Link>
                         <Nav.Link onClick={() => navigate("/home")}>Prenota</Nav.Link>
                     </Nav>
                     <Nav>

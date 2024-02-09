@@ -1,5 +1,5 @@
 {
-    "name": "epicode-belcastro_capstoneproject-backend",
+    "name": "stayhub_capstoneproject-backend",
     "version": "1.0.0",
     "description": "BackEnd for Capstone Project",
     "main": "index.js",
@@ -10,9 +10,9 @@
     },
     "repository": {
         "type": "git",
-        "url": "EPICODE-Belcastro_CapstoneProject-BackEnd"
+        "url": "stayhub_CapstoneProject-BackEnd"
     },
-    "author": "Alessio Belcastro",
+    "author": "Domenico Zungri",
     "license": "ISC",
     "dependencies": {
         "bcrypt": "^5.1.1",
