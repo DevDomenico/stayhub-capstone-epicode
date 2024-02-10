@@ -1,5 +1,27 @@
-.homepage {
-    height: calc(100vh - 56px);
-    
+.card img {
+    width: 250px;
+    height: 250px;
+    transition: transform 0.3s ease; /* Aggiungi una transizione fluida */
 }
 
+.card:hover img {
+    transform: scale(1.1); /* Ingrandisci l'immagine al passaggio del mouse */
+}
+.card {
+    margin-top: 20px; /* Aggiungi uno spazio tra le card */
+}
+
+.card img {
+    width: 250px;
+    height: 250px;
+    transition: transform 0.3s ease; /* Aggiungi una transizione fluida */
+}
+
+.card:hover img {
+    transform: scale(1.1); /* Ingrandisci l'immagine al passaggio del mouse */
+}
+
+.card {
+    margin-top: 20px; /* Aggiungi uno spazio tra le card */
+    margin-bottom: 20px; /* Aggiungi spazio sotto ogni card */
+}

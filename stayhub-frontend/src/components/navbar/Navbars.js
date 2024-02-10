@@ -8,24 +8,23 @@ import { useNavigate } from "react-router-dom";
 const Navbars = () => {
     const navigate = useNavigate();
     return (
-        <>
-            <Navbar className='navbar' bg="light" data-bs-theme="light">
-                <Container>
-                    <Navbar.Brand onClick={() => navigate("/")}>StayHub</Navbar.Brand>
+        <Navbar className='navbar' bg="white" variant="light" expand="md">
+            <Container>
+                <Navbar.Brand onClick={() => navigate("/")}>StayHub</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link onClick={() => navigate("/home")}>Home</Nav.Link>
-                        <Nav.Link onClick={() => navigate("/home")}>cerca</Nav.Link>
-                        <Nav.Link onClick={() => navigate("/home")}>Prenota</Nav.Link>
+                        <Nav.Link onClick={() => navigate("/search")}>Ricerca</Nav.Link>
+                        <Nav.Link onClick={() => navigate("/book")}>Prenota</Nav.Link>
                     </Nav>
                     <Nav>
-                    
-                        <Nav.Link onClick={() => navigate("/login")}>Login</Nav.Link>
-                       
+                        <Nav.Link onClick={() => navigate("/login")} className="login-link">Login</Nav.Link>
                     </Nav>
-                </Container>
-            </Navbar>
-        </>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     )
 }
 
-export default Navbars
+export default Navbars;
