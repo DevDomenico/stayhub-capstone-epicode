@@ -72,6 +72,59 @@ const Homepage = () => {
       price: "$90 per night",
       image: "https://cdn.pixabay.com/photo/2017/05/31/10/23/manor-house-2359884_1280.jpg",
     },
+    {
+      id: "9",
+      place: "Cina",
+      description: "Explore the city of love",
+      price: "$90 per night",
+      image: "https://cdn.pixabay.com/photo/2017/05/31/10/23/manor-house-2359884_1280.jpg",
+    },
+    {
+      id: "10",
+      place: "Grecia",
+      description: "Explore the city of love",
+      price: "$90 per night",
+      image: "https://cdn.pixabay.com/photo/2017/05/31/10/23/manor-house-2359884_1280.jpg",
+    },
+    {
+      id: "11",
+      place: "Turchia",
+      description: "Explore the city of love",
+      price: "$90 per night",
+      image: "https://cdn.pixabay.com/photo/2017/05/31/10/23/manor-house-2359884_1280.jpg",
+    },
+    {
+      id: "12",
+      place: "Messico",
+      description: "Explore the city of love",
+      price: "$90 per night",
+      image: "https://cdn.pixabay.com/photo/2017/05/31/10/23/manor-house-2359884_1280.jpg",
+    },
+    {
+      id: "13",
+      place: "Brasile",
+      description: "Explore the city of love",
+      price: "$90 per night",
+      image: "https://cdn.pixabay.com/photo/2017/05/31/10/23/manor-house-2359884_1280.jpg",
+    },
+    {
+      id: "14",
+      place: "Argentina",
+      description: "Explore the city of love",
+      price: "$90 per night",
+      image: "https://cdn.pixabay.com/photo/2017/05/31/10/23/manor-house-2359884_1280.jpg",
+    },
+    {
+      id: "15",
+      place: "Australia",
+      description: "Explore the city of love",
+      price: "$90 per night",
+      image: "https://cdn.pixabay.com/photo/2017/05/31/10/23/manor-house-2359884_1280.jpg",
+    },
+  
+  
+   
+  
   ];
 
   const handleInputChange = (e) => {
