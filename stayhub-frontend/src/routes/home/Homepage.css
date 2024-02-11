@@ -25,3 +25,33 @@
     margin-top: 20px; /* Aggiungi uno spazio tra le card */
     margin-bottom: 20px; /* Aggiungi spazio sotto ogni card */
 }
+
+.card img {
+    width: 250px;
+    height: 250px;
+    transition: transform 0.3s ease; /* Aggiungi una transizione fluida */
+}
+
+.card:hover img {
+    transform: scale(1.1); /* Ingrandisci l'immagine al passaggio del mouse */
+}
+
+.card {
+    margin-top: 20px; /* Aggiungi uno spazio tra le card */
+    margin-bottom: 20px; /* Aggiungi spazio sotto ogni card */
+    width: 250px; /* Imposta la larghezza della card */
+}
+
+.card-body {
+    padding: 0.5rem; /* Riduci lo spazio interno della card */
+}
+
+.card-title {
+    font-size: 1rem; /* Imposta la dimensione del font del titolo */
+    margin-bottom: 0.5rem; /* Riduci lo spazio inferiore del titolo */
+}
+
+.card-text {
+    font-size: 0.9rem; /* Imposta la dimensione del font del testo */
+    margin-bottom: 0.3rem; /* Riduci lo spazio inferiore del testo */
+}
