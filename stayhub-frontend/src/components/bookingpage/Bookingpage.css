@@ -1,0 +1,41 @@
+/* BookingPage.css */
+
+.booking-page {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+    min-height: 100vh;
+    padding-top: 5em;
+  }
+  
+  .booking-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .booking-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .booking-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Aggiungi qui altri stili specifici per la tua pagina di prenotazione */
+  

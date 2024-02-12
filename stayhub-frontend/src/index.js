@@ -9,6 +9,7 @@ import Homepage from './routes/home/Homepage';
 import Login from './routes/login/Login';
 import Error from './routes/error/Error';
 import Register from './routes/register/Register';
+import BookingPage from './components/bookingpage/Bookingpage';
 
 
 
@@ -24,6 +25,9 @@ const router = createBrowserRouter([
   { path: "login"   , element: <Login /> },
 
   { path: "register"   , element: <Register /> },
+  
+  { path: "booking"   , element: <BookingPage />}
+
   
 ]);
 
