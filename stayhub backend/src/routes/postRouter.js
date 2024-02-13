@@ -37,8 +37,22 @@ postRoute
         console.error("Error while adding new post:", error);
         res.status(500).send("Internal Server Error");
     }
+})
+.get("/get", async (req, res) => {
+    try {
+        // Retrieve all posts from the database
+        const posts = await Post.find();
+
+        // Respond with the retrieved posts
+        res.status(200).json(posts);
+    } catch (error) {
+        // Handle errors
+        console.error("Error while retrieving posts:", error);
+        res.status(500).send("Internal Server Error");
+    }
 });
     
+
 
       
     

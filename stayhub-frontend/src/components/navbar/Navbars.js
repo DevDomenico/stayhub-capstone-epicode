@@ -16,7 +16,7 @@ const Navbars = () => {
                     <Nav className="me-auto">
                         <Nav.Link onClick={() => navigate("/home")}>Home</Nav.Link>
                         <Nav.Link onClick={() => navigate("/search")}>Ricerca</Nav.Link>
-                        <Nav.Link onClick={() => navigate("/book")}>Prenota</Nav.Link>
+                        <Nav.Link onClick={() => navigate("/booking")}>Prenota</Nav.Link>
                     </Nav>
                     <Nav>
                         <Nav.Link onClick={() => navigate("/login")} className="login-link">Login</Nav.Link>
