@@ -55,3 +55,12 @@
     font-size: 0.9rem; /* Imposta la dimensione del font del testo */
     margin-bottom: 0.3rem; /* Riduci lo spazio inferiore del testo */
 }
+
+.prenota {
+   transform: translateY(-25%); 
+   transition: .7s;
+}
+.prenota:hover {
+   cursor: pointer; 
+    transform: scale(1.1);
+}
