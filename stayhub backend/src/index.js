@@ -3,6 +3,7 @@ import list from "express-list-endpoints"
 import mongoose from "mongoose"
 import usersRoute from "./routes/usersRouter.js"
 import postRoute  from "./routes/postRouter.js"
+import bookingRoute from "./routes/bookingRouter.js"
 import { config } from "dotenv"
 import cors from "cors"
 config()
@@ -15,6 +16,7 @@ server.use(express.json())
 
 server.use("/users", usersRoute)
 server.use("/post", postRoute)
+server.use("/booking", bookingRoute)
 
 
 const initServer = async () => {

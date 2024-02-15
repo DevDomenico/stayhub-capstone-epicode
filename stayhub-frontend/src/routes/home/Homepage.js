@@ -11,8 +11,7 @@ import { useNavigate } from "react-router-dom";
 const Homepage = () => {
   const [inputValue, setInputValue] = useState("");
   const [placesArray, setPlacesArray] = useState([]);
-  const Navigate = useNavigate();
-
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetchData();
@@ -23,12 +22,29 @@ const Homepage = () => {
       const response = await axios.get("http://localhost:3030/post/get");
       setPlacesArray(response.data);
     } catch (error) {
-      console.log(error);
+      console.error("Error fetching data:", error);
     }
   };
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
+  };
+
+  const prenota = (e) => {
+    const { createdAt, date, description, host, image, place, price, title } = e;
+    
+    const urlParams = new URLSearchParams();
+    urlParams.append("createdAt", createdAt);
+    urlParams.append("date", date);
+    urlParams.append("description", description);
+    urlParams.append("host", host);
+    urlParams.append("image", image);
+    urlParams.append("place", place);
+    urlParams.append("price", price);
+    urlParams.append("title", title);
+
+    const encodedParams = urlParams.toString();
+    navigate(`/booking?${encodedParams}`);
   };
 
   const filteredPlaces = placesArray.filter((item) => {
@@ -39,26 +55,6 @@ const Homepage = () => {
     }
     return false;
   });
- 
-
-    const prenota = (e) => {
-      const urlParams = new URLSearchParams();
-      urlParams.append("createdAt", e.createdAt);
-      urlParams.append("date", e.date);
-      urlParams.append("description", e.description);
-      urlParams.append("host", e.host);
-      urlParams.append("image", e.image);
-      urlParams.append("place", e.place);
-      urlParams.append("price", e.price);
-      urlParams.append("title", e.title);
-
-      const encodedParams = encodeURIComponent(urlParams.toString());
-      Navigate(`/booking?${encodedParams}`) ;
-
-   
-    };
-
-
 
   return (
     <div>
