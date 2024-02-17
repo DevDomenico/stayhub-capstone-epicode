@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Navbars from '../../components/navbar/Navbars';
 import './Bookingpage.css'; // Importa il file CSS di Bookingpage
+import { useNavigate } from 'react-router-dom';
 
 const BookingPage = () => {
+  const navigate = useNavigate();
   const [bookingParams, setBookingParams] = useState({});
   const [placesArray, setPlacesArray] = useState([]);
   const [user, setUser] = useState("");
@@ -20,18 +22,29 @@ const BookingPage = () => {
       price: decodeURIComponent(urlParams.get("price")),
       title: decodeURIComponent(urlParams.get("title")),
     };
-    
+    if (title === "" || title === null) {
+      navigate("/");
+    }
     console.log(urlParams);
     setBookingParams(params);
   }, []);
   const book = async () => {
+    let token=sessionStorage.getItem("token");
+    let user=JSON.parse(sessionStorage.getItem("user")).userId;
+   
+
+    let placeid=bookingParams.title;
     try {
-     ;
-      setPlacesArray(response.data);
       const response = await axios.post("http://localhost:3030/booking/book", {
-      user,
-      placeid,
+        user,
+        placeid,
+      }, {
+        headers: {
+          Authorization:  `Bearer ${token}`
+        }
       });
+      setPlacesArray(response.data);
+      navigate ("/");
     } catch (error) {
       console.error("Error fetching data:", error);
     }

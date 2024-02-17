@@ -22,6 +22,9 @@ const Login = () => {
         password,
       });
       console.log("Login successful:", response.data);
+      sessionStorage.setItem("token", response.data.token);
+      sessionStorage.setItem("user", JSON.stringify(response.data.user));
+      navigate("/");
     } catch (error) {
       console.error("Login failed:", error);
     }
