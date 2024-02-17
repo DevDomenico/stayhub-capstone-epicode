@@ -49,7 +49,7 @@ const Prenotazione = () => {
         <div className="prenotazione-page">
             <Navbars />
             <div className="d-flex  flex-column align-items-center justify-content-center w-100">
-                <p className="pt-5 mt-3"> lista prenotazioni:</p>
+                <p className="testo pt-5 mt-3"> Prenotazioni effettuate</p>
                 <div className="prenotazioni">
                     {filteredPlaces.map((item) => (
                         <div
