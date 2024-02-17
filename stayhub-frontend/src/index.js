@@ -29,6 +29,8 @@ const router = createBrowserRouter([
   { path: "booking"   , element: <BookingPage />}
 
   
+
+  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
