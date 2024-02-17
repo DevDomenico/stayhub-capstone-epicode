@@ -22,10 +22,10 @@ const BookingPage = () => {
       price: decodeURIComponent(urlParams.get("price")),
       title: decodeURIComponent(urlParams.get("title")),
     };
-    if (title === "" || title === null) {
+    if (params.title === "" || params.title === null) {
       navigate("/");
     }
-    console.log(urlParams);
+    console.log("ciao");
     setBookingParams(params);
   }, []);
   const book = async () => {

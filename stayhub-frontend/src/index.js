@@ -10,7 +10,7 @@ import Login from './routes/login/Login';
 import Error from './routes/error/Error';
 import Register from './routes/register/Register';
 import BookingPage from './routes/bookingpage/Bookingpage';
-
+import Prenotazioni from './routes/prenotazioni/Prenotazione';
 
 
 
@@ -27,6 +27,8 @@ const router = createBrowserRouter([
   { path: "register"   , element: <Register /> },
   
   { path: "booking"   , element: <BookingPage />}
+  ,
+  { path: "prenotazioni"   , element: <Prenotazioni />}
 
   
 

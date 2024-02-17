@@ -15,8 +15,8 @@ const Navbars = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link onClick={() => navigate("/home")}>Home</Nav.Link>
-                        <Nav.Link onClick={() => navigate("/search")}>Ricerca</Nav.Link>
-                        <Nav.Link onClick={() => navigate("/booking")}>Prenota</Nav.Link>
+                        
+                        <Nav.Link onClick={() => navigate("/prenotazioni")}>Prenotazioni</Nav.Link>
                     </Nav>
                     <Nav>
                         <Nav.Link onClick={() => navigate("/login")} className="login-link">Login</Nav.Link>
