@@ -4,10 +4,10 @@
     transition: transform 0.3s ease; /* Aggiungi una transizione fluida */
 }
 
-.card:hover img {
-    transform: scale(1.1); /* Ingrandisci l'immagine al passaggio del mouse */
-}
+
 .card {
+    transition: transform 0.3s ease; /* Aggiungi una transizione fluida */
+
     margin-top: 20px; /* Aggiungi uno spazio tra le card */
 }
 
@@ -17,8 +17,9 @@
     transition: transform 0.3s ease; /* Aggiungi una transizione fluida */
 }
 
-.card:hover img {
+.card:hover  {
     transform: scale(1.1); /* Ingrandisci l'immagine al passaggio del mouse */
+    curser: pointer; /* Cambia il cursore al passaggio del mouse */
 }
 
 .card {
@@ -29,12 +30,9 @@
 .card img {
     width: 250px;
     height: 250px;
-    transition: transform 0.3s ease; /* Aggiungi una transizione fluida */
 }
 
-.card:hover img {
-    transform: scale(1.1); /* Ingrandisci l'immagine al passaggio del mouse */
-}
+
 
 .card {
     margin-top: 20px; /* Aggiungi uno spazio tra le card */
